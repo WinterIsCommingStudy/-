@@ -11,11 +11,13 @@
       sizes="16x16"
       href="/elice-rabbit-favicon.png"
     />
+    <!-- tailwind css -->
+    <link href="../output.css" rel="stylesheet" />
     <!-- bulma css 관련 -->
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
-    />
+    /> -->
     <!-- 폰트 어썸: 아이콘 -->
     <script
       defer
@@ -23,7 +25,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- 커스텀 css, js -->
-    <link rel="stylesheet" href="login.css" />
+    <!-- <link rel="stylesheet" href="login.css" /> -->
     <script src="login.js" type="module" defer></script>
     <script type="text/javascript" defer>
       fetch("/header.html")
@@ -47,7 +49,9 @@
     <!-- 로그인 폼(Form) -->
     <div class="login-form-container">
       <form class="box login-form-box" id="loginForm">
-        <p class="title is-5 has-text-info">원픽에 오신걸 환영합니다!</p>
+        <p class="title is-5 has-text-info bg-pink-200">
+          원픽에 오신걸 환영합니다!
+        </p>
         <div class="field">
           <label class="label" for="emailInput">이메일</label>
           <div class="control">
