@@ -19,7 +19,6 @@ main {
   justify-content: center;
   align-items: center;
 
-  background-color: #818181;
   font-weight: 700;
   font-size: 2rem;
   color: #FFF;
@@ -38,7 +37,6 @@ main {
   justify-content: flex-start;
 
   font-size: 1.4rem;
-  background-color: #494949;
 }
 
 .nav-subcontainer {
@@ -62,7 +60,6 @@ main {
 
 .english {
   font-weight: 700;
-  color: #BAE3ED;
 }
 
 .korean {
@@ -103,7 +100,6 @@ main {
 
 .profile {
   margin: 1rem 1.5rem;
-  color: #BAE3ED;
 }
 
 .info-box {
