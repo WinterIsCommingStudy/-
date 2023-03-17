@@ -44,44 +44,51 @@
         </div>
       </section>
 
-      <section class="category-management-header">
-        <div class="category-management-header-title">카테고리 관리</div>
-      </section>
-      <section class="category-management-main">
-        <form
-          class="box register-category-form-box"
-          id="registerCategoryForm"
-          >
-          <p class="title is-5">카테고리 추가</p>
-          <div class="field">
-            <label class="label" for="titleInput">카테고리 이름</label>
-            <div class="control">
-              <input
-                class="input"
-                id="titleInput"
-                type="text"
-                placeholder="Book Category"
-                autocomplete="on"
-              />
+      <!--카테고리 관리 메인-->
+      <div class="container flex flex-col">
+        <section class="category-management-header">
+          <div class="category-management-header-title">카테고리 관리</div>
+        </section>
+  
+        <div class="main-container flex flex-col">
+          <section class="category-add flex justify-between bg-violet-100">
+            <form
+              class="box register-category-form-box flex flex-col justify-evenly"
+              id="registerCategoryForm"
+              >
+              <p class="title">카테고리 추가</p>
+              <div class="field">
+                <label class="label" id="labeling" for="titleInput">새로 추가할 카테고리 이름을 작성해주세요</label>
+                <div class="control">
+                  <input
+                    class="input"
+                    id="titleInput"
+                    type="text"
+                    placeholder="새 카테고리명"
+                    autocomplete="on"
+                  />
+                </div>
+              </div>
+            </form>
+            <button
+              class="button is-fullwidth flex"
+              id="addCategoryButton"
+            >
+              <i class="fa-solid fa-circle-plus"></i>
+              <p>카테고리 추가하기</p>
+            </button>
+          </section>
+    
+          <div class="categories bg-blue-100">
+            <div
+              class="box delete-category-form-box"
+              id="deleteCategoryForm"
+              >
+              <p class="title">현재 카테고리</p>
+              <div class="field" id="nowCategoryInput">
+                <!--현재 카테고리 삽입-->
+              </div>
             </div>
-          </div>
-        </form>
-        <button
-          class="button is-fullwidth"
-          id="addCategoryButton"
-        >
-          카테고리 추가하기
-        </button>
-      </section>
-
-      <div class="category-delete">
-        <div
-          class="box delete-category-form-box"
-          id="deleteCategoryForm"
-          >
-          <p class="title is-5">현재 카테고리</p>
-          <div class="field" id="nowCategoryInput">
-            <!--현재 카테고리 삽입-->
           </div>
         </div>
       </div>

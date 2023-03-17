@@ -49,6 +49,16 @@ async function handleSubmit(e) {
 // 카테고리 가져오기
 let categoryIdToDelete;
 async function addNowCategory() {
+  // const categorys = [
+  //   {
+  //     _id: 1,
+  //     category: "소설",
+  //   },
+  //   {
+  //     _id: 2,
+  //     category: "에세이",
+  //   }
+  // ];
   const categorys = await Api.get("/api/category");
   categorys.forEach((item) => {
     // 객체 destructuring
