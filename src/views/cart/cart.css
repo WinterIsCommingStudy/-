@@ -22,7 +22,7 @@
 
 .title {
   color: #363636;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 600;
   line-height: 1.125;
 }
@@ -75,7 +75,6 @@
   font-weight: bold;
   color: white;
   padding: 0.5em;
-  background: #79ccff;
   border-radius: 20px;
 }
 .check-section a.continue:after {
@@ -85,11 +84,7 @@
   right: 0;
   transition: all 0.15s linear;
 }
-.check-section a.continue:hover,
-.check-section a.continue:focus,
-.check-section a.continue:active {
-  background: #8b81fd;
-}
+
 .check-section a.continue:hover:after,
 .check-section a.continue:focus:after,
 .check-section a.continue:active:after {
@@ -107,7 +102,7 @@
   padding: 0.25rem;
 }
 .cart-button .allDeletebox {
-  display: inline-block;
+  display: inline;
   font-size: 0.9rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
@@ -140,9 +135,6 @@
 .cart-container .header .info {
   display: flex;
   flex-direction: row;
-}
-.cart-container p {
-  margin: 0 100px 0 100px;
 }
 
 /*주문 요약창*/
@@ -218,7 +210,6 @@
   color: white;
   height: 4rem;
   width: 100%;
-  background-color: #79ccff;
   border-style: none;
   border-radius: 20px;
 }
@@ -229,11 +220,7 @@
   right: 0;
   transition: all 0.15s linear;
 }
-.purchase .button:hover,
-.purchase .button:focus,
-.purchase .button:active {
-  background: #8b81fd;
-}
+
 .purchase .button:hover:after,
 .purchase .button:focus:after,
 .purchase .button:active:after {

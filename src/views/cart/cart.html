@@ -3,10 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
     <link rel="stylesheet" href="./cart.css" />
     <title>장바구니</title>
-    <link href="../output.css" rel="stylesheet">
+    <link href="../output.css" rel="stylesheet" />
   </head>
   <body>
     <!-- 헤더 -->
@@ -16,7 +15,7 @@
     <main class="main">
       <div class="container">
         <!-- 장바구니 헤더 -->
-        <div class="cart-header">
+        <div class="cart-header items-baseline">
           <div class="title">
             <p>장바구니</p>
           </div>
@@ -38,7 +37,11 @@
                   <p class="allDeletebox">전체 삭제</p>
                 </label>
               </div>
-              <a helf="#" class="continue">continue shopping</a>
+              <a
+                helf="#"
+                class="continue drop-shadow-md font-semibold text-white bg-blue-100 hover:bg-blue-200 px-16 py-2.5 rounded-3xl"
+                >continue shopping</a
+              >
             </section>
 
             <div class="cart-product-container" id="cartProductContainer">
@@ -46,7 +49,7 @@
               <section class="cart-container">
                 <div class="header">
                   <input type="checkbox" />
-                  <div class="info">
+                  <div class="info w-full justify-around">
                     <p>이미지</p>
                     <p>상품명</p>
                     <p>가격</p>
@@ -79,7 +82,16 @@
                     <p class="total-price" id="orderTotal"></p>
                   </div>
                   <div class="purchase">
-                    <button class="button" id="purchaseButton">구매하기</button>
+                    <button
+                      class="button drop-shadow-md font-semibold text-2xl text-white bg-blue-100 hover:bg-blue-200 w-full px-16 py-2.5 rounded-3xl border-black border"
+                      id="purchaseButton"
+                      style="
+                        text-shadow: -1px -1px 0 black, 1px -1px 0 black,
+                          -1px 1px 0 black, 1px 1px 0 black;
+                      "
+                    >
+                      구매하기
+                    </button>
                   </div>
                 </div>
               </div>
