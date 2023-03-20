@@ -11,9 +11,10 @@ showStart();
 async function showStart() {
   startNoBtn.href = "/home";
 
-  const datas = await Api.get("/api");
-  const { _id, imgUrl } = datas;
-  startBookImg.src = imgUrl;
+  // const datas = await Api.get("/api");
+  // const { _id, imgUrl } = datas;
+  // startBookImg.src = imgUrl;
+  startBookImg.src = "./미움받을용기.jpg";
 
   startYesBtn.href = `/products/${_id}`;
 }
