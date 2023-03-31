@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="h-full">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,11 +11,8 @@
       sizes="16x16"
       href="/elice-rabbit-favicon.png"
     />
-    <!-- bulma css 관련 -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
-    />
+    <!-- tailwind css -->
+    <link href="../output.css" rel="stylesheet" />
     <!-- 폰트 어썸: 아이콘 -->
     <script
       defer
@@ -23,7 +20,6 @@
       crossorigin="anonymous"
     ></script>
     <!-- 커스텀 css, js -->
-    <link rel="stylesheet" href="login.css" />
     <script src="login.js" type="module" defer></script>
     <script type="text/javascript" defer>
       fetch("/header.html")
@@ -40,45 +36,54 @@
         });
     </script>
   </head>
-  <body>
+  <body class="font-sans h-full flex flex-col">
     <!-- 헤더 -->
     <header class="header"></header>
 
     <!-- 로그인 폼(Form) -->
-    <div class="login-form-container">
-      <form class="box login-form-box" id="loginForm">
-        <p class="title is-5 has-text-info">원픽에 오신걸 환영합니다!</p>
-        <div class="field">
-          <label class="label" for="emailInput">이메일</label>
-          <div class="control">
+    <div class="flex-1">
+      <div class="h-full flex justify-center items-center">
+        <form
+          class="shadow-md flex flex-col px-20 py-14 border-2 rounded-3xl border-gray-200"
+          id="loginForm"
+          style="width: 440px"
+        >
+          <p class="text-5xl font-semibold text-center w-full mb-16">
+            어서오세요!
+          </p>
+          <div>
             <input
-              class="input"
+              class="border-b-2 border-gray-200 w-full p-2.5"
               id="emailInput"
               type="email"
-              placeholder="abc@example.com"
+              placeholder="onetwo@gmail.com"
               autocomplete="on"
             />
           </div>
-        </div>
-
-        <div class="field mb-5">
-          <label class="label" for="passwordInput">비밀번호</label>
-          <div class="control">
+          <div>
             <input
-              class="input"
+              class="border-b-2 border-gray-200 w-full p-2.5 mt-14"
               id="passwordInput"
               type="password"
               placeholder="********"
               autocomplete="on"
             />
           </div>
-        </div>
-
-        <button class="button is-info is-fullwidth" id="submitButton">
-          로그인하기
-        </button>
-      </form>
+          <button
+            class="drop-shadow-md mt-24 font-semibold text-2xl text-white bg-blue-100 hover:bg-blue-200 w-full px-16 py-2.5 rounded-3xl border-black border"
+            id="submitButton"
+            style="
+              text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+                1px 1px 0 black;
+            "
+          >
+            로그인하기
+          </button>
+        </form>
+      </div>
     </div>
+
+    <!-- 푸터 -->
     <footer class="footer"></footer>
   </body>
 </html>

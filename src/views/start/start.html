@@ -1,20 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="h-full" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="start.css" />
+    <!-- tailwind css -->
+    <link href="../output.css" rel="stylesheet" />
   </head>
-  <body>
-    <main>
-      <section class="start-book">
+  <body class="h-full bg-sky-50">
+    <main class="h-full flex justify-center items-center">
+      <section class="mx-24 shadow-2xl">
         <img src="" alt="불러올 이미지가 없습니다." class="start-book-img" />
       </section>
-      <section class="start-btns">
-        <a href="" class="start-yes">이 책이 마음에 드시나요?</a>
-        <a href="" class="start-no">다른 책을 원하시나요?</a>
+      <section class="mx-24 flex flex-col start-btns">
+        <a
+          href=""
+          class="hover:bg-cyan-700 border-sky-900 border-2 shadow-md text-center text-white text-2xl bg-cyan-600 py-8 px-20 rounded-xl mb-20 start-yes"
+          >이 책이 마음에 드시나요?</a
+        >
+        <a
+          href=""
+          class="hover:bg-cyan-700 border-sky-900 border-2 shadow-md text-center text-white text-2xl bg-cyan-600 py-8 px-20 rounded-xl start-no"
+          >다른 책을 원하시나요?</a
+        >
       </section>
     </main>
     <script type="module" src="./start.js"></script>
